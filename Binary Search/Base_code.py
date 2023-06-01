@@ -7,7 +7,6 @@ The idea of binary search is to use the information that the array is sorted and
 #pseudo code
 
 arr = [1,3,4,6,7,9]
-x = 7
 
 def BinarySearch(arr, x):
     n = len(arr)
@@ -16,7 +15,7 @@ def BinarySearch(arr, x):
 
     while(low<=high): #base condition for binary search
         #calculate mid
-        mid = low + (high-mid)//2
+        mid = low + (high-low)//2
         
         if arr[mid] == x:
             return mid
@@ -25,3 +24,6 @@ def BinarySearch(arr, x):
         else:
             high = mid -1 #means x lies on left half
     return -1
+
+print(BinarySearch(arr, 1)) #low == high
+print(BinarySearch(arr, 7))

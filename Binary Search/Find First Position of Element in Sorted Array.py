@@ -4,8 +4,8 @@ arr = [1,2,2,2,3,4,4,4,5]
 
 #steps
 '''
-1. check arr[mid]>=x if this condition satisfies we will eliminate right side of array which occurs right after mid.
-2. high will be mid-1 we are moving to left side as chances of first occurence of x will be more on right side. 
+1. check arr[mid]==x if this condition satisfies we will eliminate right side of array which occurs right side of mid.
+2. high will be mid-1 we are moving to left side as chances of first occurence of x will be more on left side. 
 '''
 
 #code
